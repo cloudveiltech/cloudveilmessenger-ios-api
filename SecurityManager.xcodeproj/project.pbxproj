@@ -12,6 +12,7 @@
 		723FFF4F20496F990027A9BC /* SecurityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723FFF4520496F980027A9BC /* SecurityManager.framework */; };
 		723FFF5420496F990027A9BC /* SecurityManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723FFF5320496F990027A9BC /* SecurityManagerTests.swift */; };
 		723FFF5620496F990027A9BC /* SecurityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 723FFF4820496F980027A9BC /* SecurityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		726CE14720497894001459E2 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE14620497894001459E2 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		723FFF4E20496F990027A9BC /* SecurityManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecurityManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		723FFF5320496F990027A9BC /* SecurityManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManagerTests.swift; sourceTree = "<group>"; };
 		723FFF5520496F990027A9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726CE14620497894001459E2 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		80B5B34D9A75602CB53287B4 /* Pods_SecurityManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecurityManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3623AA4930ADA637EBF4939 /* Pods_SecurityManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecurityManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0447FD0F945E3BB20852513 /* Pods-SecurityManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityManagerTests/Pods-SecurityManagerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		723FFF65204970440027A9BC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				726CE14620497894001459E2 /* MainController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				TargetAttributes = {
 					723FFF4420496F980027A9BC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					723FFF4D20496F990027A9BC = {
@@ -382,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726CE14720497894001459E2 /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1BFB4E181F74AE429630EDB /* Pods-SecurityManager.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -535,6 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.requestum.SecurityManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -544,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EBA9796EBE13FED95E5B154F /* Pods-SecurityManager.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -567,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08BC82F60DC9B379DBDD339F /* Pods-SecurityManagerTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L95C8867HX;
 				INFOPLIST_FILE = SecurityManagerTests/Info.plist;
@@ -582,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0447FD0F945E3BB20852513 /* Pods-SecurityManagerTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L95C8867HX;
 				INFOPLIST_FILE = SecurityManagerTests/Info.plist;
