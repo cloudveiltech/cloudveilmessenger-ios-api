@@ -71,6 +71,8 @@
 		723FFF4720496F980027A9BC /* SecurityManager */ = {
 			isa = PBXGroup;
 			children = (
+				723FFF5F20496FE60027A9BC /* Classes */,
+				723FFF6020496FF60027A9BC /* Resources */,
 				723FFF4820496F980027A9BC /* SecurityManager.h */,
 				723FFF4920496F980027A9BC /* Info.plist */,
 			);
@@ -84,6 +86,60 @@
 				723FFF5520496F990027A9BC /* Info.plist */,
 			);
 			path = SecurityManagerTests;
+			sourceTree = "<group>";
+		};
+		723FFF5F20496FE60027A9BC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				723FFF612049700F0027A9BC /* Models */,
+				723FFF65204970440027A9BC /* Controllers */,
+				723FFF642049703A0027A9BC /* Managers */,
+				723FFF622049701D0027A9BC /* Extansions */,
+				723FFF63204970310027A9BC /* Helpers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		723FFF6020496FF60027A9BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		723FFF612049700F0027A9BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		723FFF622049701D0027A9BC /* Extansions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extansions;
+			sourceTree = "<group>";
+		};
+		723FFF63204970310027A9BC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		723FFF642049703A0027A9BC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		723FFF65204970440027A9BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +399,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SecurityManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.requestum.SecurityManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -364,6 +421,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SecurityManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.requestum.SecurityManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
