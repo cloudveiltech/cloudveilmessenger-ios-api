@@ -3,15 +3,10 @@
 
 use_frameworks!
 
-pod 'Fabric'
-pod 'Crashlytics'
-
 pod 'ObjectMapper'
 pod 'Alamofire'
 pod 'AlamofireNetworkActivityIndicator'
 pod 'SwiftDate'
-
-
 
 target 'SecurityManager' do
   target 'SecurityManagerTests' do

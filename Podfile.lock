@@ -2,28 +2,21 @@ PODS:
   - Alamofire (4.6.0)
   - AlamofireNetworkActivityIndicator (2.2.0):
     - Alamofire (~> 4.5)
-  - Crashlytics (3.9.3):
-    - Fabric (~> 1.7.2)
-  - Fabric (1.7.2)
   - ObjectMapper (3.1.0)
   - SwiftDate (4.5.1)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityIndicator
-  - Crashlytics
-  - Fabric
   - ObjectMapper
   - SwiftDate
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
-  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
-  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
 
-PODFILE CHECKSUM: 390ec5f31d97fee317b300ac56b4ece060f4491f
+PODFILE CHECKSUM: 1aee34f026e19d84166c7cb01cf7a75d20ea1683
 
 COCOAPODS: 1.4.0
