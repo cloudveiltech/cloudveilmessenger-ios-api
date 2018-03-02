@@ -13,6 +13,13 @@
 		723FFF5420496F990027A9BC /* SecurityManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723FFF5320496F990027A9BC /* SecurityManagerTests.swift */; };
 		723FFF5620496F990027A9BC /* SecurityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 723FFF4820496F980027A9BC /* SecurityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		726CE14720497894001459E2 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE14620497894001459E2 /* MainController.swift */; };
+		726CE14D204979B5001459E2 /* NSError+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE148204979B4001459E2 /* NSError+Ext.swift */; };
+		726CE14E204979B5001459E2 /* NSAttributedString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE149204979B4001459E2 /* NSAttributedString+Ext.swift */; };
+		726CE14F204979B5001459E2 /* DataResponse + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE14A204979B4001459E2 /* DataResponse + Ext.swift */; };
+		726CE150204979B5001459E2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE14B204979B4001459E2 /* String+Ext.swift */; };
+		726CE151204979B5001459E2 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE14C204979B5001459E2 /* Array+Ext.swift */; };
+		726CE155204979BE001459E2 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE153204979BE001459E2 /* ObjectManager.swift */; };
+		726CE156204979BE001459E2 /* ServerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE154204979BE001459E2 /* ServerConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 		723FFF5320496F990027A9BC /* SecurityManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManagerTests.swift; sourceTree = "<group>"; };
 		723FFF5520496F990027A9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		726CE14620497894001459E2 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		726CE148204979B4001459E2 /* NSError+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Ext.swift"; sourceTree = "<group>"; };
+		726CE149204979B4001459E2 /* NSAttributedString+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Ext.swift"; sourceTree = "<group>"; };
+		726CE14A204979B4001459E2 /* DataResponse + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataResponse + Ext.swift"; sourceTree = "<group>"; };
+		726CE14B204979B4001459E2 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		726CE14C204979B5001459E2 /* Array+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		726CE153204979BE001459E2 /* ObjectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
+		726CE154204979BE001459E2 /* ServerConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConstant.swift; sourceTree = "<group>"; };
 		80B5B34D9A75602CB53287B4 /* Pods_SecurityManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecurityManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3623AA4930ADA637EBF4939 /* Pods_SecurityManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecurityManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0447FD0F945E3BB20852513 /* Pods-SecurityManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityManagerTests/Pods-SecurityManagerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +154,11 @@
 		723FFF622049701D0027A9BC /* Extansions */ = {
 			isa = PBXGroup;
 			children = (
+				726CE14C204979B5001459E2 /* Array+Ext.swift */,
+				726CE14A204979B4001459E2 /* DataResponse + Ext.swift */,
+				726CE149204979B4001459E2 /* NSAttributedString+Ext.swift */,
+				726CE148204979B4001459E2 /* NSError+Ext.swift */,
+				726CE14B204979B4001459E2 /* String+Ext.swift */,
 			);
 			path = Extansions;
 			sourceTree = "<group>";
@@ -154,6 +173,7 @@
 		723FFF642049703A0027A9BC /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				726CE152204979BE001459E2 /* Server */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -164,6 +184,15 @@
 				726CE14620497894001459E2 /* MainController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		726CE152204979BE001459E2 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				726CE153204979BE001459E2 /* ObjectManager.swift */,
+				726CE154204979BE001459E2 /* ServerConstant.swift */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 		9B780B89780557F9A54A6C9B /* Pods */ = {
@@ -386,7 +415,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726CE156204979BE001459E2 /* ServerConstant.swift in Sources */,
+				726CE14F204979B5001459E2 /* DataResponse + Ext.swift in Sources */,
+				726CE14E204979B5001459E2 /* NSAttributedString+Ext.swift in Sources */,
 				726CE14720497894001459E2 /* MainController.swift in Sources */,
+				726CE151204979B5001459E2 /* Array+Ext.swift in Sources */,
+				726CE150204979B5001459E2 /* String+Ext.swift in Sources */,
+				726CE155204979BE001459E2 /* ObjectManager.swift in Sources */,
+				726CE14D204979B5001459E2 /* NSError+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
