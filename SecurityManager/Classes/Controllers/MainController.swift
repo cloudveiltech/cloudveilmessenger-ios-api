@@ -10,4 +10,8 @@ import Foundation
 
 class MainController {
     
+    // MARK: - Singleton
+    
+    static let `default` = MainController()
+
 }

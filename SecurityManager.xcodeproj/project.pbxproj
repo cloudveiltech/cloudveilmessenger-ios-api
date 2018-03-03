@@ -20,6 +20,12 @@
 		726CE151204979B5001459E2 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE14C204979B5001459E2 /* Array+Ext.swift */; };
 		726CE155204979BE001459E2 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE153204979BE001459E2 /* ObjectManager.swift */; };
 		726CE156204979BE001459E2 /* ServerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726CE154204979BE001459E2 /* ServerConstant.swift */; };
+		ED96448F204A7F3A00601FA0 /* TGSettingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED96448E204A7F3A00601FA0 /* TGSettingsRequest.swift */; };
+		ED964491204A80E800601FA0 /* TGRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED964490204A80E800601FA0 /* TGRow.swift */; };
+		ED964493204A81DF00601FA0 /* TGSettingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED964492204A81DF00601FA0 /* TGSettingsResponse.swift */; };
+		ED964495204A829200601FA0 /* SecurityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED964494204A829200601FA0 /* SecurityManager.swift */; };
+		ED964497204A886800601FA0 /* TGUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED964496204A886800601FA0 /* TGUserModel.swift */; };
+		ED964499204A8B8F00601FA0 /* TGUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED964498204A8B8F00601FA0 /* TGUserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		C3623AA4930ADA637EBF4939 /* Pods_SecurityManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecurityManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0447FD0F945E3BB20852513 /* Pods-SecurityManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityManagerTests/Pods-SecurityManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBA9796EBE13FED95E5B154F /* Pods-SecurityManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityManager/Pods-SecurityManager.release.xcconfig"; sourceTree = "<group>"; };
+		ED96448E204A7F3A00601FA0 /* TGSettingsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGSettingsRequest.swift; sourceTree = "<group>"; };
+		ED964490204A80E800601FA0 /* TGRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGRow.swift; sourceTree = "<group>"; };
+		ED964492204A81DF00601FA0 /* TGSettingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGSettingsResponse.swift; sourceTree = "<group>"; };
+		ED964494204A829200601FA0 /* SecurityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityManager.swift; sourceTree = "<group>"; };
+		ED964496204A886800601FA0 /* TGUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGUserModel.swift; sourceTree = "<group>"; };
+		ED964498204A8B8F00601FA0 /* TGUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TGUserController.swift; sourceTree = "<group>"; };
 		F1BFB4E181F74AE429630EDB /* Pods-SecurityManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityManager/Pods-SecurityManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +159,10 @@
 		723FFF612049700F0027A9BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ED96448E204A7F3A00601FA0 /* TGSettingsRequest.swift */,
+				ED964490204A80E800601FA0 /* TGRow.swift */,
+				ED964492204A81DF00601FA0 /* TGSettingsResponse.swift */,
+				ED964496204A886800601FA0 /* TGUserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				726CE14620497894001459E2 /* MainController.swift */,
+				ED964498204A8B8F00601FA0 /* TGUserController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +208,7 @@
 			children = (
 				726CE153204979BE001459E2 /* ObjectManager.swift */,
 				726CE154204979BE001459E2 /* ServerConstant.swift */,
+				ED964494204A829200601FA0 /* SecurityManager.swift */,
 			);
 			path = Server;
 			sourceTree = "<group>";
@@ -415,14 +433,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED96448F204A7F3A00601FA0 /* TGSettingsRequest.swift in Sources */,
 				726CE156204979BE001459E2 /* ServerConstant.swift in Sources */,
 				726CE14F204979B5001459E2 /* DataResponse + Ext.swift in Sources */,
+				ED964491204A80E800601FA0 /* TGRow.swift in Sources */,
 				726CE14E204979B5001459E2 /* NSAttributedString+Ext.swift in Sources */,
 				726CE14720497894001459E2 /* MainController.swift in Sources */,
 				726CE151204979B5001459E2 /* Array+Ext.swift in Sources */,
 				726CE150204979B5001459E2 /* String+Ext.swift in Sources */,
 				726CE155204979BE001459E2 /* ObjectManager.swift in Sources */,
+				ED964493204A81DF00601FA0 /* TGSettingsResponse.swift in Sources */,
 				726CE14D204979B5001459E2 /* NSError+Ext.swift in Sources */,
+				ED964499204A8B8F00601FA0 /* TGUserController.swift in Sources */,
+				ED964497204A886800601FA0 /* TGUserModel.swift in Sources */,
+				ED964495204A829200601FA0 /* SecurityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

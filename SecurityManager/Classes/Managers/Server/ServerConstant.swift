@@ -11,10 +11,14 @@ import UIKit
 
 enum ServerConstant: String {
     
-    //  MARK: BaseAuthorization
+    //  MARK: - Cases
     
-    case main = "main"
+    case settings = "settings"
+ 
     
-    static let baseUrl = ""
-    static let serverAPIUrl = ""
+    // MARK: - Properties
+    
+    static let baseUrl = "https://manage.cloudveil.org/api/v1/"
+    static let serverAPIUrl = baseUrl + "messenger/"
+    static let actionCheckChannels = "org.cloudveil.messenger.service.check.channels"
 }
