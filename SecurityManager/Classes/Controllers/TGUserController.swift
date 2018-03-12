@@ -8,28 +8,28 @@
 
 import UIKit
 
-class TGUserController {
+@objc open class TGUserController: NSObject {
     
     // MARK: - Singleton
     
-    static let `default` = TGUserController()
+    @objc open static let controller = TGUserController()
     
     
     // MARK: - Actions
     
-    func set(userID id: Int?) {
+    @objc open func set(userID id: NSInteger) {
         TGUserModel.set(userID: id)
     }
     
-    func set(userPhoneNumber phone: String?) {
+    @objc open func set(userPhoneNumber phone: NSString) {
         TGUserModel.set(userPhoneNumber: phone)
     }
     
-    func getUserID() -> Int? {
+    @objc open func getUserID() -> NSInteger {
         return TGUserModel.id
     }
     
-    func getUserPhoneNumber() -> String? {
+    @objc open func getUserPhoneNumber() -> NSString {
         return TGUserModel.phoneNumber
     }
 }

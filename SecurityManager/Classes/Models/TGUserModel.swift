@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TGUserModel {
+class TGUserModel: NSObject {
     
     // MARK: - Constants
     
@@ -18,30 +18,26 @@ class TGUserModel {
     
     // MARK: - Properties
     
-    static private(set) var id: Int? {
-        set {
-            if let id = newValue {
-                UserDefaults.standard.set(id, forKey: kTGUserModelId)
-            }
-        }
+    public static private(set) var id: NSInteger {
         
+        set { UserDefaults.standard.set(id, forKey: kTGUserModelId) }
         get { return UserDefaults.standard.integer(forKey: kTGUserModelId) }
     }
     
-    static private(set) var phoneNumber: String? {
+    public static private(set) var phoneNumber: NSString {
         
         set { UserDefaults.standard.set(newValue, forKey: kTGUserModelPhoneNumber) }
-        get { return UserDefaults.standard.object(forKey: kTGUserModelPhoneNumber) as? String }
+        get { return (UserDefaults.standard.object(forKey: kTGUserModelPhoneNumber) as? NSString ?? "") }
     }
     
     
     // MARK: - Actions
     
-    static func set(userID: Int?) {
+    public static func set(userID: NSInteger) {
         id = userID
     }
     
-    static func set(userPhoneNumber phone: String?) {
+    public static func set(userPhoneNumber phone: NSString) {
         phoneNumber = phone
     }
 }

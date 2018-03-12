@@ -8,10 +8,10 @@
 
 import Foundation
 
-class MainController {
+open class MainController: NSObject {
     
     // MARK: - Singleton
     
-    static let `default` = MainController()
+    open static let controller = MainController()
 
 }

@@ -14,8 +14,8 @@ class TGRow {
     
     // MARK: - Properties
     
-    var id: Int?
-    var title: String?
+    public var id: Int?
+    public var title: String?
     
     
     // MARK: Mappable

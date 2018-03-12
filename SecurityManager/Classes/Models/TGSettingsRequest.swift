@@ -15,11 +15,11 @@ class TGSettingsRequest: Mappable {
  
     // MARK: - Properties
     
-    var id: Int?
-    var phoneNumber: String?
-    var groups: [TGRow]?
-    var channels: [TGRow]?
-    var bots: [TGRow]?
+    public var id: Int?
+    public var phoneNumber: String?
+    public var groups: [TGRow]?
+    public var channels: [TGRow]?
+    public var bots: [TGRow]?
     
     
     // MARK: Mappable
@@ -38,7 +38,7 @@ class TGSettingsRequest: Mappable {
 
 extension TGSettingsRequest {
     
-    var isEmpty: Bool {
+    public var isEmpty: Bool {
         return bots?.isEmpty == true && channels?.isEmpty == true && groups?.isEmpty == true
     }
 }

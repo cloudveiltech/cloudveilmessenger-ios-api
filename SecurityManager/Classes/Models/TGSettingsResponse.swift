@@ -14,8 +14,8 @@ class TGSettingsResponse: Mappable {
     
     // MARK: - Properties
     
-    var secretChat: Bool?
-    var secretChatMinimumLength: Int?
+    public var secretChat: Bool?
+    public var secretChatMinimumLength: Int?
     
     
     // MARK: Mappable
