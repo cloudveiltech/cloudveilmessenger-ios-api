@@ -9,7 +9,6 @@
 import Foundation
 
 import Alamofire
-import AlamofireNetworkActivityIndicator
 import ObjectMapper
 
 typealias JSON = [String: Any]
@@ -28,7 +27,7 @@ class ObjectManager {
                  serverConstant: ServerConstant,
                  parameters: Parameters? = nil,
                  urlParameters: [String: String]? = nil,
-                 encoding: ParameterEncoding = URLEncoding.httpBody) -> DataRequest {
+                 encoding: ParameterEncoding = JSONEncoding.default) -> DataRequest {
         
         let urlString = ServerConstant.serverAPIUrl + serverConstant.rawValue
         

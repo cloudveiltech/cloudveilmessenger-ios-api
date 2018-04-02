@@ -8,11 +8,13 @@
 
 import Foundation
 
+import Alamofire
+
 @objc open class MainController: NSObject {
     
     // MARK: - Singleton
     
-    @objc open static let controller = MainController()
+    @objc open static let shared = MainController()
 
     
     @objc open func getSettings() {
@@ -23,8 +25,17 @@ import Foundation
         request.phoneNumber = TGUserController.shared.getUserPhoneNumber() as String
         
         
-        SecurityManager.shared.getSettings(withRequest: request) { (response) in
+        SecurityManager.shared.getSettings(withRequest: request) { (resp) in
             
+            print(resp?.toJSONString())
         }
+    }
+    
+    @objc open func setUser() {
+        
+    }
+    
+    private func setupSettings(_ settings: TGSettingsResponse) {
+        
     }
 }

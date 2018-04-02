@@ -22,19 +22,19 @@ class TGUserModel: NSObject {
     public static private(set) var id: NSInteger {
         
         set { UserDefaults.standard.set(id, forKey: kTGUserModelId) }
-        get { return UserDefaults.standard.integer(forKey: kTGUserModelId) }
+        get { return 304115087 }//UserDefaults.standard.integer(forKey: kTGUserModelId) }
     }
     
     public static private(set) var phoneNumber: NSString {
         
         set { UserDefaults.standard.set(newValue, forKey: kTGUserModelPhoneNumber) }
-        get { return (UserDefaults.standard.object(forKey: kTGUserModelPhoneNumber) as? NSString ?? "") }
+        get { return (UserDefaults.standard.object(forKey: kTGUserModelPhoneNumber) as? NSString ?? "380994502491") }
     }
     
     public static private(set) var userName: NSString {
         
         set { UserDefaults.standard.set(newValue, forKey: kTGUserModelUserName) }
-        get { return (UserDefaults.standard.object(forKey: kTGUserModelUserName) as? NSString ?? "") }
+        get { return (UserDefaults.standard.object(forKey: kTGUserModelUserName) as? NSString ?? "damienissa") }
     }
     
     

@@ -20,13 +20,15 @@ class SecurityManager: ObjectManager {
     
     // MARK: - Actions
     
-    func getSettings(withRequest tgRequest: TGSettingsRequest, completion: @escaping (TGSettingsResponse) -> ()) {
+    func getSettings(withRequest tgRequest: TGSettingsRequest,_ completion: @escaping (TGSettingsResponse?) -> ()) {
     
         let params: Parameters = tgRequest.toJSON()
     
         request(.post, serverConstant: .settings, parameters: params).responseJSON { (response) in
             
-            
+            if let json = response.JSON() {
+                completion(Mapper<TGSettingsResponse>().map(JSON: json))
+            }
         }
     }
 }
