@@ -46,7 +46,7 @@ extension Sequence where Element == Int {
     }
 }
 
-extension MutableCollection where Indices.Iterator.Element == Index {
+extension MutableCollection where Element == Index {
     
     mutating func shuffle() {
     

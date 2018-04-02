@@ -49,8 +49,8 @@ extension String {
     
     func capitalizingFirstLetter() -> String {
         
-        let first = String(characters.prefix(1)).capitalized
-        let other = String(characters.dropFirst())
+        let first = String(self.first!).capitalized
+        let other = self.dropFirst()
         
         return first + other
     }
