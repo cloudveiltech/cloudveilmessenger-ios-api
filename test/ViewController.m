@@ -19,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSInteger* userID = 304115087;
+    
+    [[TGUserController shared] setWithUserID:userID];
+    [[TGUserController shared] setWithUserName:@"damienissa"];
+    [[TGUserController shared] setWithUserPhoneNumber:@"380994502491"];
+    
     [[MainController shared] getSettings];
 }
 

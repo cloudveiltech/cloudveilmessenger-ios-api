@@ -15,7 +15,29 @@ import Alamofire
     // MARK: - Singleton
     
     @objc open static let shared = MainController()
+    
+    
+    // MARK: - Properties
+    
+    private var settings: TGSettingsResponse? {
+        return DataSource<TGSettingsResponse>.value()
+    }
+    
+    @objc public var disableBio: Bool {
+        return settings?.disableBio ?? false
+    }
+    @objc public var disableBioChange: Bool {
+        return settings?.disableBioChange ?? false
+    }
+    @objc public var disableProfilePhoto: Bool {
+        return settings?.disableProfilePhoto ?? false
+    }
+    @objc public var disableProfilePhotoChange: Bool {
+        return settings?.disableProfilePhotoChange ?? false
+    }
 
+    
+    // MARK: - Actions
     
     @objc open func getSettings() {
         
@@ -24,18 +46,14 @@ import Alamofire
         request.userName = TGUserController.shared.getUserName() as String
         request.phoneNumber = TGUserController.shared.getUserPhoneNumber() as String
         
-        
         SecurityManager.shared.getSettings(withRequest: request) { (resp) in
             
-            print(resp?.toJSONString())
+            self.saveSettings(resp)
         }
     }
     
-    @objc open func setUser() {
+    private func saveSettings(_ settings: TGSettingsResponse?) {
         
-    }
-    
-    private func setupSettings(_ settings: TGSettingsResponse) {
-        
+        DataSource<TGSettingsResponse>.set(settings)
     }
 }

@@ -28,12 +28,12 @@
 		15F4FF6B20724123003F4E92 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F4FF6820724122003F4E92 /* ObjectMapper.framework */; };
 		15F4FF6C2072415C003F4E92 /* SecurityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723FFF4520496F980027A9BC /* SecurityManager.framework */; };
 		15F4FF6D2072415C003F4E92 /* SecurityManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 723FFF4520496F980027A9BC /* SecurityManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		15F4FF762072424F003F4E92 /* Alamofire.framework in Resources */ = {isa = PBXBuildFile; fileRef = 15F4FF6720724122003F4E92 /* Alamofire.framework */; };
-		15F4FF772072424F003F4E92 /* ObjectMapper.framework in Resources */ = {isa = PBXBuildFile; fileRef = 15F4FF6820724122003F4E92 /* ObjectMapper.framework */; };
 		15F4FF7820724284003F4E92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F4FF6720724122003F4E92 /* Alamofire.framework */; };
 		15F4FF7920724284003F4E92 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15F4FF6720724122003F4E92 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		15F4FF7A20724284003F4E92 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F4FF6820724122003F4E92 /* ObjectMapper.framework */; };
 		15F4FF7B20724284003F4E92 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15F4FF6820724122003F4E92 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		15F4FF7D20725380003F4E92 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F4FF7C20725380003F4E92 /* DataSource.swift */; };
+		15F4FF7E20725402003F4E92 /* DataSource.swift in Resources */ = {isa = PBXBuildFile; fileRef = 15F4FF7C20725380003F4E92 /* DataSource.swift */; };
 		723FFF4F20496F990027A9BC /* SecurityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723FFF4520496F980027A9BC /* SecurityManager.framework */; };
 		723FFF5420496F990027A9BC /* SecurityManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723FFF5320496F990027A9BC /* SecurityManagerTests.swift */; };
 		723FFF5620496F990027A9BC /* SecurityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 723FFF4820496F980027A9BC /* SecurityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,6 +102,7 @@
 		155BDD3F20723DA10097BAD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15F4FF6720724122003F4E92 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		15F4FF6820724122003F4E92 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
+		15F4FF7C20725380003F4E92 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		723FFF4520496F980027A9BC /* SecurityManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecurityManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		723FFF4820496F980027A9BC /* SecurityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityManager.h; sourceTree = "<group>"; };
 		723FFF4920496F980027A9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -266,6 +267,7 @@
 		723FFF63204970310027A9BC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				15F4FF7C20725380003F4E92 /* DataSource.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -426,8 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F4FF762072424F003F4E92 /* Alamofire.framework in Resources */,
-				15F4FF772072424F003F4E92 /* ObjectMapper.framework in Resources */,
+				15F4FF7E20725402003F4E92 /* DataSource.swift in Resources */,
 				154214CB2061191F00467311 /* Array+Ext.swift in Resources */,
 				154214CC2061191F00467311 /* DataResponse + Ext.swift in Resources */,
 				154214CD2061191F00467311 /* NSAttributedString+Ext.swift in Resources */,
@@ -479,6 +480,7 @@
 				726CE150204979B5001459E2 /* String+Ext.swift in Sources */,
 				726CE155204979BE001459E2 /* ObjectManager.swift in Sources */,
 				ED964493204A81DF00601FA0 /* TGSettingsResponse.swift in Sources */,
+				15F4FF7D20725380003F4E92 /* DataSource.swift in Sources */,
 				726CE14D204979B5001459E2 /* NSError+Ext.swift in Sources */,
 				ED964499204A8B8F00601FA0 /* TGUserController.swift in Sources */,
 				ED964497204A886800601FA0 /* TGUserModel.swift in Sources */,

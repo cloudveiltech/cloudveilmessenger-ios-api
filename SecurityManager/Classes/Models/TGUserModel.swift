@@ -12,29 +12,29 @@ class TGUserModel: NSObject {
     
     // MARK: - Constants
     
-    private static let kTGUserModelId = "TGUserModelId"
-    private static let kTGUserModelPhoneNumber = "TGUserModelPhoneNumber"
-    private static let kTGUserModelUserName = "TGUserModelUserName"
+    static let kTGUserModelId = "TGUserModelId"
+    static let kTGUserModelPhoneNumber = "TGUserModelPhoneNumber"
+    static let kTGUserModelUserName = "TGUserModelUserName"
     
     
     // MARK: - Properties
     
     public static private(set) var id: NSInteger {
         
-        set { UserDefaults.standard.set(id, forKey: kTGUserModelId) }
-        get { return 304115087 }//UserDefaults.standard.integer(forKey: kTGUserModelId) }
+        set { UserDefaults.standard.set(newValue, forKey: kTGUserModelId) }
+        get { return UserDefaults.standard.object(forKey: kTGUserModelId) as? NSInteger ?? 0}
     }
     
     public static private(set) var phoneNumber: NSString {
         
         set { UserDefaults.standard.set(newValue, forKey: kTGUserModelPhoneNumber) }
-        get { return (UserDefaults.standard.object(forKey: kTGUserModelPhoneNumber) as? NSString ?? "380994502491") }
+        get { return (UserDefaults.standard.object(forKey: kTGUserModelPhoneNumber) as? NSString ?? "") }
     }
     
     public static private(set) var userName: NSString {
         
         set { UserDefaults.standard.set(newValue, forKey: kTGUserModelUserName) }
-        get { return (UserDefaults.standard.object(forKey: kTGUserModelUserName) as? NSString ?? "damienissa") }
+        get { return (UserDefaults.standard.object(forKey: kTGUserModelUserName) as? NSString ?? "") }
     }
     
     
