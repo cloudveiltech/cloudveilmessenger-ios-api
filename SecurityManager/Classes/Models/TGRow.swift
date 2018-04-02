@@ -10,12 +10,13 @@ import UIKit
 
 import ObjectMapper
 
-class TGRow {
+public class TGRow {
     
     // MARK: - Properties
     
     public var id: Int?
     public var title: String?
+    public var userName: String?
     
     
     // MARK: Mappable
@@ -26,5 +27,6 @@ class TGRow {
         
         id <- map["id"]
         title <- map["title"]
+        userName <- map["user_name"]
     }
 }

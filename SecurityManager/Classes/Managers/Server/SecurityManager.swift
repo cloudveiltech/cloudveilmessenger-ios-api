@@ -9,20 +9,22 @@
 import UIKit
 
 import ObjectMapper
+import Alamofire
 
 class SecurityManager: ObjectManager {
 
     // MARK: - Singleton
     
-    static let manager = SecurityManager()
+    static let shared = SecurityManager()
     
     
     // MARK: - Actions
     
     func getSettings(withRequest tgRequest: TGSettingsRequest, completion: @escaping (TGSettingsResponse) -> ()) {
-        
     
-        request(.post, serverConstant: .settings, parameters: tgRequest.toJSON()).responseJSON { (response) in
+        let params: Parameters = tgRequest.toJSON()
+    
+        request(.post, serverConstant: .settings, parameters: params).responseJSON { (response) in
             
             
         }

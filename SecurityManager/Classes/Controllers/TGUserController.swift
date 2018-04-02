@@ -12,7 +12,7 @@ import UIKit
     
     // MARK: - Singleton
     
-    @objc open static let controller = TGUserController()
+    @objc open static let shared = TGUserController()
     
     
     // MARK: - Actions
@@ -25,11 +25,19 @@ import UIKit
         TGUserModel.set(userPhoneNumber: phone)
     }
     
+    @objc open func set(userName name: NSString) {
+        TGUserModel.set(userName: name)
+    }
+    
     @objc open func getUserID() -> NSInteger {
         return TGUserModel.id
     }
     
     @objc open func getUserPhoneNumber() -> NSString {
         return TGUserModel.phoneNumber
+    }
+    
+    @objc open func getUserName() -> NSString {
+        return TGUserModel.userName
     }
 }

@@ -14,6 +14,7 @@ class TGUserModel: NSObject {
     
     private static let kTGUserModelId = "TGUserModelId"
     private static let kTGUserModelPhoneNumber = "TGUserModelPhoneNumber"
+    private static let kTGUserModelUserName = "TGUserModelUserName"
     
     
     // MARK: - Properties
@@ -30,6 +31,12 @@ class TGUserModel: NSObject {
         get { return (UserDefaults.standard.object(forKey: kTGUserModelPhoneNumber) as? NSString ?? "") }
     }
     
+    public static private(set) var userName: NSString {
+        
+        set { UserDefaults.standard.set(newValue, forKey: kTGUserModelUserName) }
+        get { return (UserDefaults.standard.object(forKey: kTGUserModelUserName) as? NSString ?? "") }
+    }
+    
     
     // MARK: - Actions
     
@@ -39,5 +46,9 @@ class TGUserModel: NSObject {
     
     public static func set(userPhoneNumber phone: NSString) {
         phoneNumber = phone
+    }
+    
+    public static func set(userName name: NSString) {
+        userName = name
     }
 }

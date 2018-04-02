@@ -8,10 +8,23 @@
 
 import Foundation
 
-open class MainController: NSObject {
+@objc open class MainController: NSObject {
     
     // MARK: - Singleton
     
-    open static let controller = MainController()
+    @objc open static let controller = MainController()
 
+    
+    @objc open func getSettings() {
+        
+        let request = TGSettingsRequest(JSON: [:])!
+        request.id = TGUserController.shared.getUserID()
+        request.userName = TGUserController.shared.getUserName() as String
+        request.phoneNumber = TGUserController.shared.getUserPhoneNumber() as String
+        
+        
+        SecurityManager.shared.getSettings(withRequest: request) { (response) in
+            
+        }
+    }
 }

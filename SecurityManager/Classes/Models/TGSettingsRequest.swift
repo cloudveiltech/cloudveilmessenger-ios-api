@@ -11,15 +11,16 @@ import UIKit
 import ObjectMapper
 
 
-class TGSettingsRequest: Mappable {
+open class TGSettingsRequest: NSObject, Mappable {
  
     // MARK: - Properties
     
     public var id: Int?
     public var phoneNumber: String?
-    public var groups: [TGRow]?
-    public var channels: [TGRow]?
-    public var bots: [TGRow]?
+    public var userName: String?
+    public var groups: [TGRow] = []
+    public var channels: [TGRow] = []
+    public var bots: [TGRow] = []
     
     
     // MARK: Mappable
@@ -28,17 +29,11 @@ class TGSettingsRequest: Mappable {
     
     public func mapping(map: Map) {
         
-        id <- map["id"]
-        phoneNumber <- map["phoneNumber"]
-    }
-}
-
-
-// MARK: - Helpers
-
-extension TGSettingsRequest {
-    
-    public var isEmpty: Bool {
-        return bots?.isEmpty == true && channels?.isEmpty == true && groups?.isEmpty == true
+        id <- map["user_id"]
+        phoneNumber <- map["user_phone"]
+        userName <- map["user_name"]
+        groups <- map["groups"]
+        channels <- map["channels"]
+        bots <- map["bots"]
     }
 }

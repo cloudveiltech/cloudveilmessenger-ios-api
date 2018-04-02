@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154214C5206117F700467311 /* TGSettingsRequest.swift in Resources */ = {isa = PBXBuildFile; fileRef = ED96448E204A7F3A00601FA0 /* TGSettingsRequest.swift */; };
+		154214C6206117F700467311 /* TGRow.swift in Resources */ = {isa = PBXBuildFile; fileRef = ED964490204A80E800601FA0 /* TGRow.swift */; };
+		154214C7206117F700467311 /* TGSettingsResponse.swift in Resources */ = {isa = PBXBuildFile; fileRef = ED964492204A81DF00601FA0 /* TGSettingsResponse.swift */; };
+		154214C8206118B800467311 /* SecurityManager.swift in Resources */ = {isa = PBXBuildFile; fileRef = ED964494204A829200601FA0 /* SecurityManager.swift */; };
+		154214C92061191800467311 /* ObjectManager.swift in Resources */ = {isa = PBXBuildFile; fileRef = 726CE153204979BE001459E2 /* ObjectManager.swift */; };
+		154214CA2061191800467311 /* ServerConstant.swift in Resources */ = {isa = PBXBuildFile; fileRef = 726CE154204979BE001459E2 /* ServerConstant.swift */; };
+		154214CB2061191F00467311 /* Array+Ext.swift in Resources */ = {isa = PBXBuildFile; fileRef = 726CE14C204979B5001459E2 /* Array+Ext.swift */; };
+		154214CC2061191F00467311 /* DataResponse + Ext.swift in Resources */ = {isa = PBXBuildFile; fileRef = 726CE14A204979B4001459E2 /* DataResponse + Ext.swift */; };
+		154214CD2061191F00467311 /* NSAttributedString+Ext.swift in Resources */ = {isa = PBXBuildFile; fileRef = 726CE149204979B4001459E2 /* NSAttributedString+Ext.swift */; };
+		154214CE2061191F00467311 /* NSError+Ext.swift in Resources */ = {isa = PBXBuildFile; fileRef = 726CE148204979B4001459E2 /* NSError+Ext.swift */; };
+		154214CF2061191F00467311 /* String+Ext.swift in Resources */ = {isa = PBXBuildFile; fileRef = 726CE14B204979B4001459E2 /* String+Ext.swift */; };
+		154214D020611A3100467311 /* Pods_SecurityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154214D120611A3100467311 /* Pods_SecurityManager.framework */; };
 		20B18482DD81EC42214925B4 /* Pods_SecurityManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3623AA4930ADA637EBF4939 /* Pods_SecurityManagerTests.framework */; };
-		3CBE6842934C93FE4EEB2B15 /* Pods_SecurityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B5B34D9A75602CB53287B4 /* Pods_SecurityManager.framework */; };
 		723FFF4F20496F990027A9BC /* SecurityManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723FFF4520496F980027A9BC /* SecurityManager.framework */; };
 		723FFF5420496F990027A9BC /* SecurityManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723FFF5320496F990027A9BC /* SecurityManagerTests.swift */; };
 		723FFF5620496F990027A9BC /* SecurityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 723FFF4820496F980027A9BC /* SecurityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,6 +90,7 @@
 
 /* Begin PBXFileReference section */
 		08BC82F60DC9B379DBDD339F /* Pods-SecurityManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityManagerTests/Pods-SecurityManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		154214D120611A3100467311 /* Pods_SecurityManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SecurityManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		723FFF4520496F980027A9BC /* SecurityManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecurityManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		723FFF4820496F980027A9BC /* SecurityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityManager.h; sourceTree = "<group>"; };
 		723FFF4920496F980027A9BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CBE6842934C93FE4EEB2B15 /* Pods_SecurityManager.framework in Frameworks */,
+				154214D020611A3100467311 /* Pods_SecurityManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +167,7 @@
 		458D173BBD3D7FC1119D03D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				154214D120611A3100467311 /* Pods_SecurityManager.framework */,
 				80B5B34D9A75602CB53287B4 /* Pods_SecurityManager.framework */,
 				C3623AA4930ADA637EBF4939 /* Pods_SecurityManagerTests.framework */,
 			);
@@ -462,6 +475,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				154214CB2061191F00467311 /* Array+Ext.swift in Resources */,
+				154214CC2061191F00467311 /* DataResponse + Ext.swift in Resources */,
+				154214CD2061191F00467311 /* NSAttributedString+Ext.swift in Resources */,
+				154214CE2061191F00467311 /* NSError+Ext.swift in Resources */,
+				154214CF2061191F00467311 /* String+Ext.swift in Resources */,
+				154214C92061191800467311 /* ObjectManager.swift in Resources */,
+				154214CA2061191800467311 /* ServerConstant.swift in Resources */,
+				154214C8206118B800467311 /* SecurityManager.swift in Resources */,
+				154214C5206117F700467311 /* TGSettingsRequest.swift in Resources */,
+				154214C6206117F700467311 /* TGRow.swift in Resources */,
+				154214C7206117F700467311 /* TGSettingsResponse.swift in Resources */,
 				72E51D4C204AD1C0008558CF /* TGUserModel.swift in Resources */,
 				72E51D41204AD110008558CF /* MainController.swift in Resources */,
 				72E51D42204AD110008558CF /* TGUserController.swift in Resources */,
@@ -793,6 +817,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L95C8867HX;
@@ -805,6 +830,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.requestum.SecurityManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -818,6 +844,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = L95C8867HX;
@@ -830,6 +857,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.requestum.SecurityManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
