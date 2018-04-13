@@ -39,12 +39,15 @@ import Alamofire
     
     // MARK: - Actions
     
-    @objc open func getSettings() {
+    @objc open func getSettings(groups: [TGRow] = [], bots: [TGRow] = [], channels: [TGRow] = []) {
         
         let request = TGSettingsRequest(JSON: [:])!
         request.id = TGUserController.shared.getUserID()
         request.userName = TGUserController.shared.getUserName() as String
         request.phoneNumber = TGUserController.shared.getUserPhoneNumber() as String
+        request.groups = groups
+        request.bots = bots
+        request.channels = channels
         
         SecurityManager.shared.getSettings(withRequest: request) { (resp) in
             

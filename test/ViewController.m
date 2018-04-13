@@ -19,13 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSInteger* userID = 304115087;
+    _bot = [TGRow alloc];
+    _bot.objectID = 12;
+    _bot.title = @"Bot";
+    _bot.userName = @"Bot";
+    _botTwo = [TGRow alloc];
+    _botTwo.objectID = 13;
+    _botTwo.title = @"Bot";
+    _botTwo.userName = @"Bot";
+    NSArray* bots = [NSArray arrayWithObjects:_bot, _botTwo, nil];
     
-    [[TGUserController shared] setWithUserID:userID];
-    [[TGUserController shared] setWithUserName:@"damienissa"];
-    [[TGUserController shared] setWithUserPhoneNumber:@"380994502491"];
-    
-    [[MainController shared] getSettings];
+    [[MainController shared] getSettingsWithGroups:bots bots:bots channels:bots];
 }
 
 

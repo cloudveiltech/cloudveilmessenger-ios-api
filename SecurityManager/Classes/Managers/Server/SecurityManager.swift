@@ -27,7 +27,8 @@ class SecurityManager: ObjectManager {
         request(.post, serverConstant: .settings, parameters: params).responseJSON { (response) in
             
             if let json = response.JSON() {
-                completion(Mapper<TGSettingsResponse>().map(JSON: json))
+                let resp = Mapper<TGSettingsResponse>().map(JSON: json)
+                completion(resp)
             }
         }
     }

@@ -10,13 +10,13 @@ import UIKit
 
 import ObjectMapper
 
-public class TGRow {
+@objc public class TGRow: NSObject, Mappable {
     
     // MARK: - Properties
     
-    public var id: Int?
-    public var title: String?
-    public var userName: String?
+    @objc public var objectID: NSInteger = -1
+    @objc public var title: NSString = ""
+    @objc public var userName: NSString = ""
     
     
     // MARK: Mappable
@@ -25,7 +25,7 @@ public class TGRow {
     
     public func mapping(map: Map) {
         
-        id <- map["id"]
+        objectID <- map["id"]
         title <- map["title"]
         userName <- map["user_name"]
     }

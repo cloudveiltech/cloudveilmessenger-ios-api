@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ObjectMapper-Swift.h</key>
 		<data>
-		dDSEdR7ulkldNy181ix6XaSXgqM=
+		y8avAcF4MNGuSjeysFN0P47neRc=
 		</data>
 		<key>Headers/ObjectMapper.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Dzx8Ivspvwi4nAy99LXHH7Qr918=
+		PZiO7d2UunKWDdnMneipEXEACE8=
 		</data>
 		<key>Modules/ObjectMapper.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		Hvccy5Uvu/whz6VH8MbsvH4Oq0I=
+		rcr7oJ20keahxDbgpBIF2XL8b/4=
 		</data>
 		<key>Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		zO0kL/SmvlHLe2yksL7GI5+4vDI=
+		J9JELsamGR6UTPtFQSwVNGsaQ/8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dDSEdR7ulkldNy181ix6XaSXgqM=
+			y8avAcF4MNGuSjeysFN0P47neRc=
 			</data>
 			<key>hash2</key>
 			<data>
-			EZp99RwV2nnu7Sa58z51knq9ic/FWpR/7Em7WnxsLPI=
+			WxwK1R3B60luo66YwOEE3TUj2RBD7srcVQX2VzbkvJU=
 			</data>
 		</dict>
 		<key>Headers/ObjectMapper.h</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hvccy5Uvu/whz6VH8MbsvH4Oq0I=
+			rcr7oJ20keahxDbgpBIF2XL8b/4=
 			</data>
 			<key>hash2</key>
 			<data>
-			nL1rX8ctpcKeO6M4Kdzh/UxXAmk9w9Qn9dvTQG5x2D8=
+			9X0icXORMTR4A2vvOegeUKCSQVt2y+LeuixxhwfZevE=
 			</data>
 		</dict>
 		<key>Modules/ObjectMapper.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zO0kL/SmvlHLe2yksL7GI5+4vDI=
+			J9JELsamGR6UTPtFQSwVNGsaQ/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ho2qVPJrqS9EbOj9Bo8VqpYaAiZT6eWu3HpAdgrYEA=
+			scxw/AFnNydYGGsUOmLtBjVrbLSXL9oodv64kfeDXbY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

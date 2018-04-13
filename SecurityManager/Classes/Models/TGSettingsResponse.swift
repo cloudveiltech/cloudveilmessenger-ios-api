@@ -23,6 +23,7 @@ class TGSettingsResponse: Mappable {
     public var disableBioChange: Bool?
     public var disableProfilePhoto: Bool?
     public var disableProfilePhotoChange: Bool?
+    public var access: AccessObject?
     
     
     // MARK: Mappable
@@ -40,5 +41,34 @@ class TGSettingsResponse: Mappable {
         disableBioChange <- map["disable_bio_change"]
         disableProfilePhoto <- map["disable_profile_photo"]
         disableProfilePhotoChange <- map["disable_profile_photo_change"]
+        access <- map["access"]
     }
 }
+
+
+class AccessObject: Mappable {
+    
+    // MARK: - Properties
+    
+    public var groups: [[String: Bool]]?
+    public var bots: [[String: Bool]]?
+    public var channels: [[String: Bool]]?
+    public var stickers: [[String: Bool]]?
+    public var users: [[String: Bool]]?
+    
+    
+    // MARK: Mappable
+    
+    public required init?(map: Map) { }
+    
+    public func mapping(map: Map) {
+        
+        groups <- map["groups"]
+        bots <- map["bots"]
+        channels <- map["channels"]
+        stickers <- map["channels"]
+        users <- map["channels"]
+    }
+}
+
+

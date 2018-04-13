@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SecurityManager/SecurityManager.h>
 
 @interface ViewController : UIViewController
 
+@property(copy) TGRow *bot;
+@property(copy) TGRow *botTwo;
 
 @end
 
