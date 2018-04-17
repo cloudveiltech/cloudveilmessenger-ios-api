@@ -59,4 +59,37 @@ import Alamofire
         
         DataSource<TGSettingsResponse>.set(settings)
     }
+    
+    @objc open func isGroupAvailable(groupID: NSInteger) -> Bool {
+        
+        if let dictArray = settings?.access?.groups {
+            if let index = dictArray.flatMap({ $0.keys }).index(where: { $0 == "\(groupID)" }) {
+                return dictArray[index]["\(groupID)"] ?? false
+            }
+        }
+        
+        return true
+    }
+    
+    @objc open func isChannelAvailable(channelID: NSInteger) -> Bool {
+        
+        if let dictArray = settings?.access?.channels {
+            if let index = dictArray.flatMap({ $0.keys }).index(where: { $0 == "\(channelID)" }) {
+                return dictArray[index]["\(channelID)"] ?? false
+            }
+        }
+        
+        return true
+    }
+    
+    @objc open func isBotAvailable(botID: NSInteger) -> Bool {
+        
+        if let dictArray = settings?.access?.bots {
+            if let index = dictArray.flatMap({ $0.keys }).index(where: { $0 == "\(botID)" }) {
+                return dictArray[index]["\(botID)"] ?? false
+            }
+        }
+        
+        return true
+    }
 }
