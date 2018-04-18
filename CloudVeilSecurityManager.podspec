@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 	s.homepage         = 'https://www.requestum.com'
 	s.license          = { :type => 'MIT', :file => 'LICENSE' }
 	s.author           = { 'Dmitriy Virych' => 'dmitry.virych@requestum.com' }
-	s.source           = { :git => 'https://github.com/dmitryvirych/CloudVeil-securityManager-ios.git', :tag => s.version.to_s }
+	s.source           = { :git => 'https://github.com/cloudveiltech/cloudveilmessenger-ios-api.git', :tag => s.version.to_s }
 	s.ios.deployment_target = '10.0'
 	s.source_files = 'SecurityManager/**/*'
 	s.dependency 'Alamofire'
