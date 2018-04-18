@@ -24,6 +24,10 @@ class TGSettingsResponse: Mappable {
     public var disableProfilePhoto: Bool?
     public var disableProfilePhotoChange: Bool?
     public var access: AccessObject?
+    public var disableSticker: Bool?
+    public var disableStickers: Bool?
+    public var disableStickersImage: String?
+    public var manageUsers: Bool?
     
     
     // MARK: Mappable
@@ -42,6 +46,10 @@ class TGSettingsResponse: Mappable {
         disableProfilePhoto <- map["disable_profile_photo"]
         disableProfilePhotoChange <- map["disable_profile_photo_change"]
         access <- map["access"]
+        disableSticker <- map["disable_sticker"]
+        disableStickers <- map["disable_stickers"]
+        disableStickersImage <- map["disable_stickers_image"]
+        manageUsers <- map["manage_users"]
     }
 }
 

@@ -19,6 +19,12 @@ import Alamofire
     
     // MARK: - Properties
     
+    private let kWasFirstLoaded = "wasFirstLoaded"
+    private var wasFirstLoaded: Bool {
+        get { return UserDefaults.standard.bool(forKey: kWasFirstLoaded) }
+        set { UserDefaults.standard.set(newValue, forKey: kWasFirstLoaded) }
+    }
+    
     private var settings: TGSettingsResponse? {
         return DataSource<TGSettingsResponse>.value()
     }
@@ -35,7 +41,17 @@ import Alamofire
     @objc public var disableProfilePhotoChange: Bool {
         return settings?.disableProfilePhotoChange ?? false
     }
-
+    @objc public var isSecretChatAvailable: Bool {
+        return settings?.secretChat ?? false
+    }
+    @objc public var minimumSecretLenght: NSInteger {
+        
+        if let lenghtStr = settings?.secretChatMinimumLength {
+           return Int(lenghtStr) ?? -1
+        }
+        
+        return -1
+    }
     
     // MARK: - Actions
     
@@ -91,5 +107,17 @@ import Alamofire
         }
         
         return true
+    }
+    
+    @objc open func firstRunPopup(at viewController: UIViewController) {
+        
+        if !wasFirstLoaded {
+            wasFirstLoaded = true
+            
+            let alert = UIAlertController(title: "CloudVeil!", message: "CloudVeil Messenger uses a server based system to control access to Bots, Channels, and Groups and other policy rules. This is used to block unacceptable content. Your Telegram id and list of channels, bots, and groups will be sent to our system to allow this to work. We do not have access to your messages themselves.", preferredStyle: .alert)
+            alert.addAction(.init(title: "OK", style: .default, handler: nil))
+            
+            viewController.present(alert, animated: true)
+        }
     }
 }
