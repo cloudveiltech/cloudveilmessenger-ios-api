@@ -19,6 +19,7 @@ import Alamofire
     
     // MARK: - Properties
     
+    private var observers: [() -> ()] = []
     private let kWasFirstLoaded = "wasFirstLoaded"
     private var wasFirstLoaded: Bool {
         get { return UserDefaults.standard.bool(forKey: kWasFirstLoaded) }
@@ -47,7 +48,7 @@ import Alamofire
     @objc public var minimumSecretLenght: NSInteger {
         
         if let lenghtStr = settings?.secretChatMinimumLength {
-           return Int(lenghtStr) ?? -1
+            return Int(lenghtStr) ?? -1
         }
         
         return -1
@@ -74,6 +75,9 @@ import Alamofire
     private func saveSettings(_ settings: TGSettingsResponse?) {
         
         DataSource<TGSettingsResponse>.set(settings)
+        for observer in observers {
+            observer()
+        }
     }
     
     @objc open func isGroupAvailable(groupID: NSInteger) -> Bool {
@@ -119,5 +123,9 @@ import Alamofire
             
             viewController.present(alert, animated: true)
         }
+    }
+    
+    @objc open func appendObserver(obs: @escaping () -> ()) {
+        observers.append(obs)
     }
 }
