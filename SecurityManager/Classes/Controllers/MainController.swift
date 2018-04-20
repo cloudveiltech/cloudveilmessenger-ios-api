@@ -30,6 +30,9 @@ import Alamofire
         return DataSource<TGSettingsResponse>.value()
     }
     
+    @objc public var disableStickers: Bool {
+        return settings?.disableSticker ?? false
+    }
     @objc public var disableBio: Bool {
         return settings?.disableBio ?? false
     }

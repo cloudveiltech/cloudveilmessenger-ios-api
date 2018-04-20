@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name             = 'CloudVeilSecurityManager'
-	s.version          = '1.0.1'
+	s.version          = '1.0.3'
 	s.swift_version 	 = '4.0'
 	s.summary          = 'SDK for CloudVeil API'
 	s.description      = 'CloudVeil SDK using for security managing'
